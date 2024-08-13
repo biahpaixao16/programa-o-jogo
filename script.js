@@ -64,7 +64,9 @@ function mostraPerguntas () {
 }
   
  function mostraAlternativas(){
-    for(const alternativas of perguntaAtual.alternativas)
+    for(const alternativas of perguntaAtual.alternativas){
+        const botaoAlternativa = document.createElement("button")
+    }
 
   }
 
