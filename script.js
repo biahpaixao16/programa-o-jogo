@@ -63,5 +63,7 @@ function mostraPerguntas () {
 
 }
   
-  mostraPerguntas();
+  mostraAlternativas(){
+
+  }
 
