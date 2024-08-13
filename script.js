@@ -50,7 +50,7 @@ const perguntas = [
                     afirmacao: "afirmacao",
                 },
             ]
-    }
+    },
 
 ]
 
