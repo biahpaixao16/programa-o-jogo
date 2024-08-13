@@ -63,7 +63,8 @@ function mostraPerguntas () {
 
 }
   
-  mostraAlternativas(){
+ function mostraAlternativas(){
+    for(const alternativas of perguntaAtual.alternativas)
 
   }
 
