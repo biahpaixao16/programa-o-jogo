@@ -70,14 +70,14 @@ function mostraPerguntas () {
     for(const alternativas of perguntaAtual.alternativas){
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativas.texto;
-        botaoAlternativa.addEventListener("click", () => respostaSelecionada(pergunta));
+        botaoAlternativa.addEventListener("click", () => respostaSelecionada(alternativas));
         caixaAltermativas.appendChild(botaoAlternativa);
     }
 
   }
 
-function respostaSelecionada (pergunta){
-    const afirmacoes = pergunta.afirmacao;
+function respostaSelecionada (alternativas){
+    const afirmacoes = alternativas.afirmacao;
     atual++;
     mostraPerguntas();
 }
