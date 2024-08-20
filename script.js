@@ -86,6 +86,9 @@ function respostaSelecionada (alternativas){
     atual++;
     mostraPerguntas();
 }
-function mostraResultado(){}
-caixaPerguntas.textContent = "Em Resumo, as suas escolhas revelaram que você..."
+function mostraResultado(){
+caixaPerguntas.textContent = "Em Resumo, as suas escolhas revelaram que você...";
+textoResultado.textContent = historiaFinal;
+caixaAltermativas.textContent = " ";
 mostraPerguntas();
+}
