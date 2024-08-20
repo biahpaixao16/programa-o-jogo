@@ -77,6 +77,7 @@ function mostraPerguntas () {
   }
 
 function respostaSelecionada (pergunta){
+    const afirmacoes = pergunta.afirmacao;
     atual++;
     mostraPerguntas();
 }
