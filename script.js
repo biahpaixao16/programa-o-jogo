@@ -76,4 +76,9 @@ function mostraPerguntas () {
 
   }
 
+function respostaSelecionada (pergunta){
+    atual++;
+    mostraPerguntas{};
+}
+
 mostraPerguntas();
