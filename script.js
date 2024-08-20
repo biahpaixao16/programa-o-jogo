@@ -86,5 +86,5 @@ function respostaSelecionada (alternativas){
     atual++;
     mostraPerguntas();
 }
-function mostraResultado
+function mostraResultado(){}
 mostraPerguntas();
