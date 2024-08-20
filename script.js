@@ -13,11 +13,11 @@ const perguntas = [
             [
                 {
                     texto: "Sorrir com o Patati, porém aumentar a desigualdade no mundo fazendo com que todos entrem em conflitos.",
-                    afirmacao: "afirmacao",
+                    afirmacao: "Parabéns!!! agora vc sorriu com o patati e aumentou a desigualdade no mundo🤡🤡",
                 },
                 {
-                    texto: "Brincar com o Patatá , porém iniciar a 3° Guerra Mundial e se tornar um dos recrutas.",
-                    afirmacao: "afirmacao",
+                    texto: "Brincar com o Patatá, porém iniciar a 3° Guerra Mundial e se tornar um dos recrutas.",
+                    afirmacao: " Parabéns!!! Você conseguiu brincar com o Patatá, porém condenouo mundo intero à morte, inclusive você",
                 },
             ]
     },
@@ -28,11 +28,11 @@ const perguntas = [
             [
                 {
                     texto: "Poder escolher o que vai comer para o resto da vida, porém todo mundo terá que beber da água do Rio Senna todo sujo, poluído, podre, capenga, estragado, pela manhã.",
-                    afirmacao: "afirmacao",
+                    afirmacao: "Parabéns!!! Você agora pode comer tudo o que quer, mas todo vai ter que viver bebendo água podre ",
                 },
                 {
                     texto: "Se tornar filho(a) da Rihanna, porém desmatar a Amazônia inteira junto do Bolsonaro nos cavalos da cavalaria com um isqueiro bic e uma tesoura sem um extintor.",
-                    afirmacao: "afirmacao",
+                    afirmacao: "Parabéns!!!! Vc nasceu filho da Rihanna, mas desmatou toda a Amazônia junto do Bolsonaro com apenas um inqueiro e uma tesoura sem nenhum extintor",
                 },
             ]
     },
@@ -43,11 +43,11 @@ const perguntas = [
             [
                 {
                     texto: "Se torna a pessoa mais rica do mundo, porém se casar com o Elon Musk e viver com ele sem poder se separar para o resto de suas vidas.",
-                    afirmacao: "afirmacao",
+                    afirmacao: "Parabéns!!! Vc se tornou a pessoa mais rica do mundo, porém se casou com o velho nojento do Elon Musk",
                 },
                 {
                     texto: "Descobrir como funciona a inteligência artificial, porém terá que fazer parte de um trisal com a Taylor Swift e o Kanye West e escutar eles cantando todo dia e noite no banho juntos.",
-                    afirmacao: "afirmacao",
+                    afirmacao: "Parabéns!!! Vc descubriu como funciona a inteligência artifcial, porém está participando de um trisal com a Taylor e o Kanye West e escuta eles cantando toda noite juntos no banho.",
                 },
             ]
     }
@@ -56,6 +56,7 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
+let historiaFinal = "";
 
 function mostraPerguntas () {
      perguntaAtual = perguntas[atual];
@@ -69,10 +70,7 @@ function mostraPerguntas () {
     for(const alternativas of perguntaAtual.alternativas){
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativas.texto;
-        botaoAlternativa.addEventListener("click", function(){
-            atual++;
-            mostraPerguntas();
-        })
+        botaoAlternativa.addEventListener("click", () => respostaSelecionada(pergunta));
         caixaAltermativas.appendChild(botaoAlternativa);
     }
 
