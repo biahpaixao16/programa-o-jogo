@@ -87,4 +87,5 @@ function respostaSelecionada (alternativas){
     mostraPerguntas();
 }
 function mostraResultado(){}
+caixaPerguntas.textContent = "Em Resumo, as suas escolhas revelaram que você..."
 mostraPerguntas();
